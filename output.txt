@@ -1,0 +1,156 @@
++==================================================================================================+
+|                             PIANC UNDER KEEL CLEARANCE (UKC) REPORT                              |
++==================================================================================================+
+|                                       1. INPUT PARAMETERS                                        |
++--------------------------------------------------------------------------------------------------+
+| Parameter                                |    Symbol    |                                  Value |
++--------------------------------------------------------------------------------------------------+
+| [A] VESSEL CHARACTERISTICS                                                                       |
+| Vessel Type                              |     Type     |                                   BULK |
+| Length Between Perpendiculars            |     L_pp     |                               223.00 m |
+| Maximum Beam                             |      B       |                                32.30 m |
+| Static Draft                             |      T       |                                12.80 m |
+| Reference Tonnage                        |    DWT/GT    |                                 60,000 |
+| Loading Condition                        |    Load_%    |                                100.0 % |
++--------------------------------------------------------------------------------------------------+
+| [B] CHANNEL & TRANSIT GEOMETRY                                                                   |
+| Nominal Water Depth                      |      h       |                                14.00 m |
+| Channel Configuration                    |    Config    |                             Restricted |
+| Channel Bottom Width                     |      W       |                               113.05 m |
+| Trench Height                            |     h_T      |                                 0.00 m |
+| Inverse Bank Slope                       |      n       |                                   7.00 |
++--------------------------------------------------------------------------------------------------+
+| [C] KINEMATICS & METOCEAN CONDITIONS                                                             |
+| Relative Wind Speed                      |     V_WR     |                              10.00 m/s |
+| Relative Wind Angle                      |   theta_WR   |                               90.0 deg |
+| Turning Index                            |     K_R      |                                   0.50 |
+| Rudder Angle                             |   delta_R    |                               15.0 deg |
+| Transient Heel Coefficient               |    C_phi     |                                   1.50 |
+| Significant Wave Height                  |     H_s      |                                 0.50 m |
+| Wave Period                              |     T_w      |                                  3.0 s |
+| Fenton Wavelength                        |   lambda_w   |                                33.04 m |
+| Wave Incidence Angle                     |     psi      |                               90.0 deg |
+| Roll Magnification Factor                |      mu      |                                   3.00 |
+| Effective Slope Coefficient              |    gamma     |                                   0.80 |
+| Number of Waves Encountered              |     N_w      |                                    500 |
+| Probability of Exceedance                |     P_m      |                                0.00115 |
++==================================================================================================+
+|                               2. DERIVED HYDROSTATICS & KINEMATICS                               |
++--------------------------------------------------------------------------------------------------+
+| Parameter                                |    Symbol    |                                  Value |
++--------------------------------------------------------------------------------------------------+
+| [A] HYDROSTATIC COEFFICIENTS & DISPLACEMENT                                                      |
+| Block Coefficient                        |     C_B      |                                  0.850 |
+| Waterplane Coefficient                   |     C_WP     |                                  0.911 |
+| Volume Displacement                      |    Nabla     |                            78,367.6 m3 |
+| Mass Displacement                        |    Delta     |                              80,327 MT |
++--------------------------------------------------------------------------------------------------+
+| [B] STABILITY & AERODYNAMIC PROFILES                                                             |
+| Vertical Center of Buoyancy              |      KB      |                                6.847 m |
+| Metacentric Radius                       |      BM      |                                4.701 m |
+| Vertical Center of Gravity               |      KG      |                                7.068 m |
+| Transverse Metacentric Height            |      GM      |                                4.480 m |
+| Frontal Windage Area                     |     A_VF     |                               514.9 m2 |
+| Lateral Windage Area                     |     A_VL     |                             1,772.8 m2 |
+| Windage Centroid Height                  |     KG_W     |                               16.775 m |
++--------------------------------------------------------------------------------------------------+
+| [C] KINEMATICS & CHANNEL BLOCKAGE                                                                |
+| Transit Speed                            |     V_s      |                     3.86 m/s (7.5 kts) |
+| Depth Froude Number                      |     F_nh     |                                  0.329 |
+| Draft Froude Number                      |     F_nT     |                                  0.345 |
+| Midship Immersed Area                    |     A_S      |                               405.2 m2 |
+| Channel Cross-Section Area               |     A_C      |                             2,954.7 m2 |
+| Blockage Factor                          |      S       |                                 0.1371 |
++==================================================================================================+
+|                              3. HYDRODYNAMIC SQUAT (PIANC ANALYSIS)                              |
++--------------------------------------------------------------------------------------------------+
+| [A] ICORELS (1980) FORMULA                                                                       |
+|     Base Volumetric Term: Vol / L_pp^2 = 1.576                                                   |
+|     Calculated Squat                                           :                         0.435 m |
++--------------------------------------------------------------------------------------------------+
+| [B] RÖMISCH (1989) FORMULA                                                                       |
+|     Critical Speed (V_cr): 8.75 m/s | Speed Ratio: 0.441                                         |
+|    Factors: C_V = 0.097, C_F = 1.516, K_delT = 0.162                                             |
+|     Calculated Squat                                           :                         0.306 m |
++--------------------------------------------------------------------------------------------------+
+| [C] MILLWARD (1992) FORMULA                                                                      |
+|     Forward Squat (S_FP): 0.049 m | Aft Squat (S_AP): 0.618 m                                    |
+|     Calculated Squat (Max of FP/AP)                            :                         0.618 m |
++--------------------------------------------------------------------------------------------------+
+| [D] ERYUZLU 2 (1994) FORMULA                                                                     |
+|     Width Correction (K_b): 1.657 | Draft Froude (F_nT): 0.345                                   |
+|     Calculated Squat                                           :                         0.505 m |
++--------------------------------------------------------------------------------------------------+
+| [E] BARRASS B3 (2004) FORMULA                                                                    |
+|     Blockage (S): 0.1371 | Speed (V_k): 7.50 kts                                                 |
+|     Calculated Squat                                           :                         0.607 m |
++--------------------------------------------------------------------------------------------------+
+| [F] ANKUDINOV MARSIM (2009) FORMULA                                                              |
+|     Midship Sinkage (S_m): 0.0026 | Dynamic Trim (Tr): -0.0001                                   |
+|     Calculated Squat                                           :                         0.589 m |
++--------------------------------------------------------------------------------------------------+
+| [G] SQUAT TOURNAMENT RANKING (DESCENDING)                                                        |
+|     1. Millward (1992)                                         :                         0.618 m |
+|     2. Barrass (2004)                                          :                         0.607 m |
+|     3. Ankudinov (2009)                                        :                         0.589 m |
+|     4. Eryuzlu (1994)                                          :                         0.505 m |
+|     5. ICORELS (1980)                                          :                         0.435 m |
+|     6. Römisch (1989)                                          :                         0.306 m |
++--------------------------------------------------------------------------------------------------+
+| -> ADOPTED HYDRODYNAMIC SQUAT (TOP 3 AVG)                      :                         0.605 m |
++==================================================================================================+
+|                            4. ENVIRONMENTAL SINKAGES & HEEL PENALTIES                            |
++--------------------------------------------------------------------------------------------------+
+|  [A] WATER DENSITY LOSS PENALTY (FRESHWATER ALLOWANCE)                                           |
+|      S_density = 12.80 * 0.025 * (0.850 / 0.911)                                                 |
+|      Calculated Density Penalty                                :                         0.299 m |
++--------------------------------------------------------------------------------------------------+
+|  [B] ASYMMETRIC DYNAMIC HEEL (WIND + TURNING)                                                    |
+|      Wind Force (F_Wy): 90,848 N | Moment Arm (l_W): 10.37 m                                     |
+|      Wind Heel Moment (M_W): 942,553 N-m                                                         |
+|      1. Wind-Induced Heel Angle (phi_W)                        :                       0.015 deg |
+|      Turning Radius (R_C): 1703.6 m | Transient Factor (C_phi): 1.50                             |
+|      2. Turn-Induced Heel Angle (phi_R)                        :                       0.011 deg |
+|      Total Combined Heel Angle                                 :                       0.027 deg |
+|      S_heel = 0.880 * (32.30 / 2) * sin(0.027 deg)                                               |
+|      Calculated Bilge Sinkage Penalty                          :                         0.007 m |
++==================================================================================================+
+|                                 5. WAVE-INDUCED VERTICAL MOTIONS                                 |
++--------------------------------------------------------------------------------------------------+
+|  [A] METHOD 1: TRIGONOMETRIC BOUNDED WORST-CASE                                                  |
+|      Roll Bound (Z_phi): 1.421 m | Pitch Bound (Z_theta): 1.940 m                                |
+|      Unbounded Sum: 3.361 m | Maximum Bound (2*H_s): 1.000 m                                     |
+|      -> Unbounded sum exceeds physical limit. Applying 2*H_s cap.                                |
+|      Calculated M1 Allowance                                   :                         1.000 m |
++--------------------------------------------------------------------------------------------------+
+|  [B] METHOD 2: JAPANESE Z3 BILGE SINKAGE METHOD                                                  |
+|      Effective Wave Slope (Phi): 1.91 deg                                                        |
+|      Resonant Roll (phi_Max) = 3.0 * 0.80 * 1.91 = 4.58 deg                                      |
+|      Unbounded Z3 (1.463 m) exceeds physical limit. Capping at 2*H_s.                            |
+|      Calculated M2 Allowance                                   :                         1.000 m |
++--------------------------------------------------------------------------------------------------+
+|  [C] METHOD 3: SPANISH ROM 3.1 SPECTRAL METHOD                                                   |
+|      C1 (Wave Height) = 2.547 | C2 (Transformation) = 0.071                                      |
+|      C3 (Load Factor) = 1.000 | C4 (Speed Factor) = 1.350                                        |
+|      C5 (Depth Factor) = 1.090| C6 (Angle Factor) = 1.700                                        |
+|      Calculated M3 Allowance                                   :                         0.226 m |
++--------------------------------------------------------------------------------------------------+
+| -> ADOPTED WAVE ALLOWANCE (AVERAGE)                            :                         0.742 m |
++==================================================================================================+
+|                          6. FINAL UNDER KEEL CLEARANCE (UKC) SUMMATION                           |
++--------------------------------------------------------------------------------------------------+
+| Gross UKC (h - T)                                              :                         1.200 m |
++--------------------------------------------------------------------------------------------------+
+| Adopted Hydrodynamic Squat                                     :                         0.605 m |
+| Adopted Wave Allowance                                         :                         0.742 m |
+| Water Density Penalty                                          :                         0.299 m |
+| Dynamic Bilge Heel Penalty                                     :                         0.007 m |
++--------------------------------------------------------------------------------------------------+
+| Total Dynamic Sinkage (Delta T_dyn)                            :                         1.652 m |
+| FINAL NET UKC (Clearance to Seabed)                            :                        -0.452 m |
+| Effective Water Depth (D_eff)                                  :                        12.348 m |
+| Effective Depth to Draft Ratio (D_eff / T)                     :                           0.965 |
++==================================================================================================+
+|  DIAGNOSIS      : CRITICAL / UNSAFE                                                              |
+|  RECOMMENDATION : Ratio < 1.10. Required minimum nominal depth (h) >= 15.80 m.                   |
++==================================================================================================+
