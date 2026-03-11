@@ -57,7 +57,7 @@ except Exception:  # pragma: no cover
 G_STD = 9.80665         # Standard Gravity [m/s^2]
 RHO = 1025.0          # Density of Seawater [kg/m^3]
 DTYPE = np.float64      # Precision for floating point arithmetic
-N_FOURIER = 50          # Order of Fourier Series (N=50)
+N_FOURIER = 10          # Order of Fourier Series (N=10)
 
 warnings.filterwarnings("ignore")
 
